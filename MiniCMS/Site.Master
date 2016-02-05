@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MiniCMS.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %>- MiniCMS</title>
+    <link rel="stylesheet" href="~/Content/cash_images/cash.css" type="text/css" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div id="page" align="center">
+            <div id="toppage" align="center">
+                <div id="date">
+                    <div style="padding: 13px; font-weight: bold;">
+                        <section id="login">
+                            <asp:LoginView ID="LoginView1" runat="server">
+                                <AnonymousTemplate>
+                                    You are not Logged in
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    Welcome,
+                                    <asp:LoginName ID="LoginName1" runat="server" />
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+
+                        </section>
+                    </div>
+                </div>
+                <div id="topbar">
+                    <div align="right" style="padding: 12px;" class="smallwhitetext">
+                        <asp:HyperLink ID="HyperLinkHome" runat="server" NavigateUrl="~/Views/Default.aspx">Home</asp:HyperLink>
+                        &nbsp;|
+                        <% if (HttpContext.Current.User.IsInRole("Admin"))
+                           {%>
+                        <asp:HyperLink ID="HyperLinkManageNotes" runat="server" NavigateUrl="~/Admin/NotesList.aspx">Manage Notes</asp:HyperLink>
+                        &nbsp;|<% } %>
+                        <% if (HttpContext.Current.User.IsInRole("Admin"))
+                           {%>
+                        <asp:HyperLink ID="HyperLinkCreateNote" runat="server" NavigateUrl="~/Admin/Edit.aspx">Create Note</asp:HyperLink>
+                        &nbsp;|<% } %>
+                        <asp:HyperLink ID="HyperLinkAbout" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink>
+                        |
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                    </div>
+                </div>
+            </div>
+            <div id="header">
+                <div class="titletext" id="logo">
+                    <div class="logotext" style="margin: 30px">MiniCMS</div>
+                </div>
+                <div id="pagetitle">
+
+                    <div id="title" class="titletext" align="right">Welcome to MiniCMS!</div>
+                </div>
+            </div>
+            <div id="content" align="center">
+                <div id="menu" align="right">
+                    <div align="right" style="width: 189px; height: 8px;">
+                        <img src="../Content/cash_images/mnu_topshadow.gif" width="189" height="8" alt="mnutopshadow" />
+                    </div>
+                    <div id="linksmenu" align="center">
+                        <asp:HyperLink ID="HyperLinkHomeLM" runat="server" NavigateUrl="Views/Default.aspx">Home</asp:HyperLink>
+                        <% if (HttpContext.Current.User.IsInRole("Admin"))
+                           {%>
+                        <asp:HyperLink ID="HyperLinkManageNotesLM" runat="server" NavigateUrl="~/Admin/NotesList.aspx">Manage Notes</asp:HyperLink>
+                        <% } %>
+                        <% if (HttpContext.Current.User.IsInRole("Admin"))
+                           {%>
+                        <asp:HyperLink ID="HyperLinkCreateNoteLM" runat="server" NavigateUrl="~/Admin/Edit.aspx">Create Note</asp:HyperLink>
+                        <% } %>
+                        <asp:HyperLink ID="HyperLinkAboutLM" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink>
+                        <asp:LoginStatus ID="LoginStatusLM" runat="server" />
+                    </div>
+                    <div align="right" style="width: 189px; height: 8px;">
+                        <img src="../Content/cash_images/mnu_bottomshadow.gif" width="189" height="8" alt="mnubottomshadow" />
+                    </div>
+                </div>
+                <div id="contenttext">
+                    <div class="bodytext" style="padding: 12px;" align="justify">
+                        <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="smallgraytext" align="center">
+                <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Products</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a><br />
+                MiniCMS © 2014<br />
+                <a href="http://www.winkhosting.com" title="Hosting Colombia">Hosting U</a><a href="http://www.winkhosting.com">SA</a><br />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

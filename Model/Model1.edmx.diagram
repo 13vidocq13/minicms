@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="725497be6b444189ad78f63ce2bcdefd" Name="Diagram1">
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_Applications" Width="1.5" PointX="5.4782151251464217" PointY="17.622434177260118" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_Membership" Width="1.5" PointX="6.8937222337786679" PointY="8.9839489948861058" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_Paths" Width="1.5" PointX="10.290509109520592" PointY="4.6493094287111" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="4.2497879435540122" PointY="16.102117098915446" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="11.839071286767288" PointY="15.853038243880979" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_Profile" Width="1.5" PointX="9.5575408123235874" PointY="26.680931088831709" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_Roles" Width="1.5" PointX="10.073601917397976" PointY="3.2290423974530036" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_SchemaVersions" Width="1.5" PointX="4.87523157749103" PointY="29.140933452705355" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_Users" Width="1.5" PointX="5.1289087818604466" PointY="19.769156465199384" />
+        <EntityTypeShape EntityType="MiniCMSModel.aspnet_WebEvent_Events" Width="1.5" PointX="6.6359757271762829" PointY="15.957428149859155" />
+        <EntityTypeShape EntityType="MiniCMSModel.Notes" Width="1.5" PointX="2.0809641378377397" PointY="26.428206456093214" />
+        <EntityTypeShape EntityType="MiniCMSModel.sysdiagrams" Width="1.5" PointX="10.245707077088628" PointY="15.72090946869967" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_Applications" Width="1.5" PointX="0.24408728454452347" PointY="8.7556502412798114" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_MembershipUsers" Width="1.5" PointX="10.870048909853235" PointY="12.72042592462172" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_Profiles" Width="1.5" PointX="10.856004796389493" PointY="21.262758875853734" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_Roles" Width="1.5" PointX="6.5594742924717595" PointY="13.614969930432258" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_Users" Width="1.5" PointX="9.2487811489257865" PointY="22.249236519564519" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_UsersInRoles" Width="1.5" PointX="1.6333195295340006" PointY="9.2263264997053547" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_WebPartState_Paths" Width="1.5" PointX="0.90067378473499493" PointY="4.6044099650366279" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_WebPartState_Shared" Width="1.5" PointX="1.3709484028494678" PointY="19.225898513209959" />
+        <EntityTypeShape EntityType="MiniCMSModel.vw_aspnet_WebPartState_User" Width="1.5" PointX="9.0664226753015171" PointY="20.953723693710621" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Me__Appli__4C0144E4" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Pa__Appli__0539C240" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Ro__Appli__6E565CE8" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Us__Appli__37FA4C37" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Me__UserI__4CF5691D" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Pe__PathI__0CDAE408" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Pe__PathI__1293BD5E" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Pe__UserI__1387E197" />
+        <AssociationConnector Association="MiniCMSModel.FK__aspnet_Pr__UserI__62E4AA3C" />
+        <AssociationConnector Association="MiniCMSModel.aspnet_UsersInRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
